@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>基于能源互联网可信数据空间的能源业务场景构想</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.8; color: #333; }
+h1 { color: #1a1a2e; border-bottom: 2px solid #0066cc; padding-bottom: 10px; }
+h2 { color: #16213e; margin-top: 40px; }
+h3 { color: #0f3460; }
+table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+th { background: #0066cc; color: white; padding: 10px 12px; text-align: left; }
+td { border: 1px solid #ddd; padding: 8px 12px; }
+tr:nth-child(even) { background: #f5f5f5; }
+code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-family: monospace; }
+pre { background: #f5f5f5; padding: 15px; border-radius: 5px; overflow-x: auto; }
+blockquote { border-left: 4px solid #0066cc; margin: 15px 0; padding: 5px 15px; color: #666; }
+hr { border: none; border-top: 1px solid #ddd; margin: 30px 0; }
+</style>
+</head>
+<body>
+<h1>基于能源互联网可信数据空间的能源业务场景构想</h1>
+<p><strong>版本：v1.0 | 2026年4月</strong></p>
+<hr>
+<h2>一、公司战略定位</h2>
+<h3>1.1 业务版图</h3>
+<table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>核心能力</th>
+<th>定位</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>可信数据空间</strong></td>
+<td>数据确权、安全计算、交换标准、开放生态</td>
+<td>底层基础设施</td>
+</tr>
+<tr>
+<td><strong>AI元能仓</strong></td>
+<td>AI能力孵化、业务场景快速验证、数据产品快速迭代</td>
+<td>创新加速器</td>
+</tr>
+<tr>
+<td><strong>能源数据产品</strong></td>
+<td>新能源消纳预测、电力现货价格预测、负荷曲线等</td>
+<td>变现通道</td>
+</tr>
+<tr>
+<td><strong>售电网络</strong></td>
+<td>31省售电资质、数万工商业用户</td>
+<td>客户渠道</td>
+</tr>
+<tr>
+<td><strong>储能运营</strong></td>
+<td>储能投资、运营管理、调度优化</td>
+<td>运营变现</td>
+</tr>
+</tbody></table>
+<h3>1.2 核心优势</h3>
+<p><strong>全国唯一：既有数据基础设施，又有客户渠道，还有AI能力，三位一体。</strong></p>
+<ul>
+<li>竞争对手有售电，无数据空间基础设施</li>
+<li>竞争对手有数据空间，无售电客户渠道</li>
+<li>竞争对手有AI，无可信数据底座</li>
+</ul>
+<hr>
+<h2>二、可信数据空间</h2>
+<h3>2.1 解决什么问题</h3>
+<table>
+<thead>
+<tr>
+<th>行业痛点</th>
+<th>我们的方案</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>数据孤岛，无法打通</td>
+<td>能源数据交换基础设施，互联互通</td>
+</tr>
+<tr>
+<td>数据不敢共享，怕泄露</td>
+<td>隐私计算+联邦学习，原始数据不出域</td>
+</tr>
+<tr>
+<td>数据无法变现</td>
+<td>数据产品化，上架交易</td>
+</tr>
+<tr>
+<td>数据质量差</td>
+<td>数据质量认证，标准化输出</td>
+</tr>
+</tbody></table>
+<h3>2.2 核心架构</h3>
+<pre><code>┌──────────────────────────────────────────────────────┐
+│                  可信数据空间平台                      │
+│                                                      │
+│  ┌─────────┐  ┌─────────┐  ┌─────────┐  ┌─────────┐ │
+│  │ 数据确权 │  │ 安全计算 │  │ 数据交换 │  │ 数据产品 │ │
+│  │  存证链  │  │ 联邦学习 │  │  撮合引擎 │  │   商店   │ │
+│  └─────────┘  └─────────┘  └─────────┘  └─────────┘ │
+└──────────────────────────────────────────────────────┘
+           ↓                    ↓
+      发电侧数据             用电侧数据
+     （新能源场站）         （工业/园区/充电）
+</code></pre>
+<h3>2.3 数据产品三层体系</h3>
+<table>
+<thead>
+<tr>
+<th>层级</th>
+<th>产品</th>
+<th>数据来源</th>
+<th>定价方式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>L1 原始数据</strong></td>
+<td>负荷曲线、发电曲线、用电画像</td>
+<td>接入客户脱敏后</td>
+<td>按端口/月</td>
+</tr>
+<tr>
+<td><strong>L2 智能数据</strong></td>
+<td>消纳预测、价格预测、负荷预测</td>
+<td>L1+AI模型</td>
+<td>按次/按月</td>
+</tr>
+<tr>
+<td><strong>L3 决策数据</strong></td>
+<td>储能调度策略、购电优化方案、VPP聚合指令</td>
+<td>L2+业务模型</td>
+<td>按项目/年</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>三、AI元能仓</h2>
+<h3>3.1 定位</h3>
+<p><strong>可信数据空间内的AI能力孵化器</strong>——快速将AI能力封装为可变现的数据产品，最小闭环验证后推广。</p>
+<h3>3.2 孵化流程</h3>
+<pre><code>创意想法 → AI能力封装 → MCP工具 → 场景验证 → 数据产品 → 规模化推广
+    ↓           ↓          ↓         ↓          ↓           ↓
+  立项      算力+模型    API输出   客户试用   定价上架    复制扩张
+</code></pre>
+<h3>3.3 孵化原则</h3>
+<ul>
+<li><strong>最小闭环</strong>：每个孵化项目3个月内要有付费验证</li>
+<li><strong>数据驱动</strong>：用真实数据，不做PPT产品</li>
+<li><strong>可复用</strong>：MCP工具孵化成功后在元能仓内共享，其他场景直接调用</li>
+</ul>
+<hr>
+<h2>四、核心数据产品</h2>
+<h3>4.1 新能源消纳预测 MCP</h3>
+<p><strong>解决的问题</strong>：明天各省市发多少电？哪些时段有富余？</p>
+<p><strong>数据底座</strong>：</p>
+<ul>
+<li>天气：Open-Meteo API（全球免费天气数据）</li>
+<li>装机：国家能源局2025年基准（31省光伏/风电装机容量）</li>
+</ul>
+<p><strong>工具清单</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>功能</th>
+<th>覆盖</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>forecast_solar</code></td>
+<td>光伏每日发电量预测</td>
+<td>31省</td>
+</tr>
+<tr>
+<td><code>forecast_wind</code></td>
+<td>风电每日发电量预测</td>
+<td>31省</td>
+</tr>
+<tr>
+<td><code>forecast_combined</code></td>
+<td>光伏+风电汇总</td>
+<td>31省</td>
+</tr>
+<tr>
+<td><code>forecast_curtailment</code></td>
+<td>弃电率/弃电量估算</td>
+<td>31省</td>
+</tr>
+<tr>
+<td><code>forecast_with_storage</code></td>
+<td>储能优化充放电策略</td>
+<td>31省</td>
+</tr>
+<tr>
+<td><code>check_alerts</code></td>
+<td>全网消纳风险扫描</td>
+<td>31省</td>
+</tr>
+<tr>
+<td><code>compare_provinces_curtailment</code></td>
+<td>多省消纳风险排名</td>
+<td>31省</td>
+</tr>
+<tr>
+<td><code>generate_daily_digest</code></td>
+<td>每日简报（人读版）</td>
+<td>全国/分省</td>
+</tr>
+<tr>
+<td><code>list_provinces</code></td>
+<td>31省装机容量查询</td>
+<td>31省</td>
+</tr>
+</tbody></table>
+<p><strong>今日预测结果示例（2026-04-18）</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>省份</th>
+<th>装机</th>
+<th>弃电率</th>
+<th>风险</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>西藏</td>
+<td>4GW</td>
+<td>21.7%</td>
+<td>🔴 高</td>
+</tr>
+<tr>
+<td>新疆</td>
+<td>125GW</td>
+<td>18.4%</td>
+<td>🔴 高</td>
+</tr>
+<tr>
+<td>内蒙古</td>
+<td>150GW</td>
+<td>17.8%</td>
+<td>🔴 高</td>
+</tr>
+<tr>
+<td>青海</td>
+<td>40GW</td>
+<td>13.4%</td>
+<td>🟡 中</td>
+</tr>
+<tr>
+<td>甘肃</td>
+<td>60GW</td>
+<td>8.4%</td>
+<td>🟡 中</td>
+</tr>
+<tr>
+<td>江苏/浙江/广东</td>
+<td>—</td>
+<td>0%</td>
+<td>🟢 低</td>
+</tr>
+</tbody></table>
+<h3>4.2 电力现货价格预测 API</h3>
+<p><strong>解决的问题</strong>：明天各省市电多少钱？峰谷时段？怎么调度最划算？</p>
+<p><strong>部署信息</strong>：</p>
+<ul>
+<li>地址：<code>http://101.201.232.176:10129</code></li>
+<li>文档：<code>/docs</code> | 可视化：<code>/dashboard</code></li>
+<li>测试Key：<code>sk-test-power-2026</code></li>
+</ul>
+<p><strong>三省真实电价数据（2025-2026年）</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>省份</th>
+<th>低谷</th>
+<th>高峰</th>
+<th>尖峰</th>
+<th>最大价差</th>
+<th>需量电价</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>浙江</strong></td>
+<td>0.315</td>
+<td>1.314</td>
+<td>1.636</td>
+<td><strong>1.321</strong></td>
+<td>40.5元/kW·月</td>
+</tr>
+<tr>
+<td><strong>广东</strong></td>
+<td>0.315</td>
+<td>1.314</td>
+<td>1.636</td>
+<td><strong>1.321</strong></td>
+<td>36.1元/kW·月</td>
+</tr>
+<tr>
+<td><strong>江苏</strong></td>
+<td>0.280</td>
+<td>1.150</td>
+<td>—</td>
+<td><strong>0.87</strong></td>
+<td>40元/kW·月</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>注：浙江/广东尖峰电价在高峰基础上上浮25%；浙江深谷（节假日）下浮80%。</p>
+</blockquote>
+<hr>
+<h2>五、商业模式</h2>
+<h3>5.1 三大收入来源</h3>
+<table>
+<thead>
+<tr>
+<th>模式</th>
+<th>说明</th>
+<th>收入特征</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>数据产品销售</strong></td>
+<td>消纳预测、现货价格预测等产品按次/按月收费</td>
+<td>订阅制，续费率高</td>
+</tr>
+<tr>
+<td><strong>平台佣金</strong></td>
+<td>数据空间撮合交易，抽取10-20%</td>
+<td>轻资产，规模化快</td>
+</tr>
+<tr>
+<td><strong>运营分成</strong></td>
+<td>储能运营、售电协同，与客户按比例分成</td>
+<td>重资产，高客单价</td>
+</tr>
+</tbody></table>
+<h3>5.2 储能运营盈利测算</h3>
+<p><strong>三省真实数据（10 MWh 储能项目）</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>盈利来源</th>
+<th>浙江年收益</th>
+<th>广东年收益</th>
+<th>江苏年收益</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>峰谷套利</td>
+<td>~382万元</td>
+<td>~382万元</td>
+<td>~150万元</td>
+</tr>
+<tr>
+<td>需量优化</td>
+<td>~35万元</td>
+<td>~31万元</td>
+<td>~34.5万元</td>
+</tr>
+<tr>
+<td>售电协同</td>
+<td>~20万元</td>
+<td>~20万元</td>
+<td>~20万元</td>
+</tr>
+<tr>
+<td>消纳协同</td>
+<td>~10万元</td>
+<td>~10万元</td>
+<td>~10万元</td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td><strong>~447万元</strong></td>
+<td><strong>~443万元</strong></td>
+<td><strong>~214万元</strong></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>浙江/广东</th>
+<th>江苏</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>投资成本（10 MWh）</td>
+<td>约600万元</td>
+<td>约600万元</td>
+</tr>
+<tr>
+<td>回本周期</td>
+<td><strong>约1.5年</strong></td>
+<td>约2.8年</td>
+</tr>
+<tr>
+<td>IRR</td>
+<td>约55%</td>
+<td>约30%</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>注：浙江/广东峰谷价差1.32元/kWh，IRR显著高于行业平均水平。</p>
+</blockquote>
+<hr>
+<h2>六、落地路径</h2>
+<h3>6.1 三阶段规划</h3>
+<p><strong>第一阶段：孵化验证（1-6个月）</strong></p>
+<table>
+<thead>
+<tr>
+<th>动作</th>
+<th>目标</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>MCP产品上架数据空间</td>
+<td>2个MCP工具封装为可调用API</td>
+</tr>
+<tr>
+<td>首批客户试用</td>
+<td>浙江/广东签约3-5家工业客户</td>
+</tr>
+<tr>
+<td>储能项目落地</td>
+<td>10 MWh储能试点项目并网</td>
+</tr>
+<tr>
+<td>数据产品定价</td>
+<td>确定订阅价格，验证付费意愿</td>
+</tr>
+</tbody></table>
+<p><strong>第二阶段：规模扩张（6-12个月）</strong></p>
+<table>
+<thead>
+<tr>
+<th>动作</th>
+<th>目标</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>储能规模复制</td>
+<td>覆盖浙江/广东，新增上海/广西，装机100 MWh</td>
+</tr>
+<tr>
+<td>售电协同深化</td>
+<td>签约200家工商业客户</td>
+</tr>
+<tr>
+<td>数据产品矩阵</td>
+<td>新增负荷预测、VPP调度指令等产品</td>
+</tr>
+<tr>
+<td>平台撮合上线</td>
+<td>数据交易撮合平台正式运营</td>
+</tr>
+</tbody></table>
+<p><strong>第三阶段：生态构建（12个月+）</strong></p>
+<table>
+<thead>
+<tr>
+<th>动作</th>
+<th>目标</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>第三方开发者引入</td>
+<td>开放API，吸引合作伙伴基于MCP开发应用</td>
+</tr>
+<tr>
+<td>能源数据交易所对接</td>
+<td>数据产品进入官方数据交易所</td>
+</tr>
+<tr>
+<td>全国复制</td>
+<td>从长三角/珠三角向其他省份复制</td>
+</tr>
+<tr>
+<td>AI能力扩展</td>
+<td>新增负荷预测AI、火电调度AI等MCP</td>
+</tr>
+</tbody></table>
+<h3>6.2 试点省份选择</h3>
+<table>
+<thead>
+<tr>
+<th>优先级</th>
+<th>省份</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>🔴 第一</td>
+<td><strong>浙江</strong></td>
+<td>峰谷价差1.32元/kWh最优，深谷政策加持，售电市场成熟</td>
+</tr>
+<tr>
+<td>🔴 第二</td>
+<td><strong>广东</strong></td>
+<td>峰谷价差1.32元/kWh，珠三角工业密集，尖峰溢价高</td>
+</tr>
+<tr>
+<td>🟡 第三</td>
+<td><strong>江苏</strong></td>
+<td>需量优化空间大，客户基础好，峰谷价差收窄后需多元盈利</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>七、竞争优势</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>传统能源企业</th>
+<th>一般数据公司</th>
+<th>我们</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>数据基础设施</td>
+<td>❌ 无</td>
+<td>⚠️ 通用，无能源属性</td>
+<td>✅ 可信数据空间</td>
+</tr>
+<tr>
+<td>客户渠道</td>
+<td>⚠️ 分散</td>
+<td>❌ 无</td>
+<td>✅ 31省售电网络</td>
+</tr>
+<tr>
+<td>能源数据AI</td>
+<td>❌ 无</td>
+<td>⚠️ 有通用AI</td>
+<td>✅ 垂直MCP产品</td>
+</tr>
+<tr>
+<td>运营能力</td>
+<td>⚠️ 有电无储</td>
+<td>❌ 无</td>
+<td>✅ 储能运营闭环</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>八、下一步行动</h2>
+<ol>
+<li><strong>AI元能仓首批孵化</strong>：两个MCP工具封装为数据产品，上架可信数据空间</li>
+<li><strong>客户试点</strong>：浙江/广东各签1-2家工业客户，出具真实收益测算报告</li>
+<li><strong>储能立项</strong>：基于真实电价数据，做10 MWh储能项目立项方案</li>
+<li><strong>数据产品定价</strong>：参考三省电价数据，确定订阅收费模式</li>
+</ol>
+<hr>
+<p><em>本方案数据来源：各省发改委/电网公司公开文件（2025-2026年）；预测数据基于Open-Meteo天气API+各省装机基准计算，仅供参考。</em></p>
+
+</body>
+</html>
