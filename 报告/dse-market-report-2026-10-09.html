@@ -4,11 +4,33 @@
 <meta charset="UTF-8">
 <title>数据要素市场分析报告 — 朗新科技生态位视角</title>
 <style>
+/* 从 jsdelivr fontsource 拉 Noto Sans SC 中文字体（gotenberg chromium 渲染时跟 HTML 一起拉） */
+@font-face {
+  font-family: 'Noto Sans SC Fallback';
+  font-weight: 400;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-sc@5.0.5/files/noto-sans-sc-chinese-simplified-400-normal.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Noto Sans SC Fallback';
+  font-weight: 600;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-sc@5.0.5/files/noto-sans-sc-chinese-simplified-600-normal.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Noto Sans SC Fallback';
+  font-weight: 700;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-sc@5.0.5/files/noto-sans-sc-chinese-simplified-700-normal.woff2') format('woff2');
+  font-display: swap;
+}
 @page { size: A4; margin: 2cm 1.5cm; }
 @page :first { margin-top: 0; }
 * { box-sizing: border-box; }
 body {
-  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  font-family: "Noto Sans SC Fallback", "Noto Sans SC", -apple-system, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
   line-height: 1.75;
   color: #1a1a1a;
   max-width: 900px;
