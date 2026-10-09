@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>数据要素市场分析报告 — 朗新科技生态位视角</title>
+<style>
+@page { size: A4; margin: 2cm 1.5cm; }
+@page :first { margin-top: 0; }
+* { box-sizing: border-box; }
+body {
+  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  line-height: 1.75;
+  color: #1a1a1a;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 60px;
+  background: #fff;
+  font-size: 14px;
+}
+h1 {
+  font-size: 28px;
+  color: #0a3d62;
+  border-bottom: 3px solid #0a3d62;
+  padding-bottom: 12px;
+  margin-top: 32px;
+  page-break-before: always;
+}
+h1:first-of-type { page-break-before: avoid; }
+h2 {
+  font-size: 20px;
+  color: #0a3d62;
+  border-left: 4px solid #0a3d62;
+  padding-left: 12px;
+  margin-top: 28px;
+}
+h3 {
+  font-size: 16px;
+  color: #2c3e50;
+  margin-top: 20px;
+}
+.meta {
+  background: #f8f9fa;
+  border-left: 4px solid #0a3d62;
+  padding: 12px 20px;
+  margin: 20px 0;
+  font-size: 13px;
+  color: #555;
+}
+.toc { background: #f4f6f8; padding: 18px 28px; border-radius: 4px; margin: 24px 0; }
+.toc ol { margin: 8px 0; padding-left: 24px; }
+.toc li { margin: 4px 0; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 13px;
+  page-break-inside: avoid;
+}
+th, td {
+  border: 1px solid #d0d7de;
+  padding: 8px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+th { background: #0a3d62; color: #fff; font-weight: 600; }
+tr:nth-child(even) { background: #f8f9fa; }
+.callout {
+  background: #fff8e1;
+  border-left: 4px solid #ff9800;
+  padding: 14px 20px;
+  margin: 16px 0;
+  border-radius: 0 4px 4px 0;
+}
+.callout-red {
+  background: #ffebee;
+  border-left: 4px solid #d32f2f;
+  padding: 14px 20px;
+  margin: 16px 0;
+  border-radius: 0 4px 4px 0;
+}
+.callout-green {
+  background: #e8f5e9;
+  border-left: 4px solid #388e3c;
+  padding: 14px 20px;
+  margin: 16px 0;
+  border-radius: 0 4px 4px 0;
+}
+blockquote {
+  background: #f4f6f8;
+  border-left: 3px solid #90a4ae;
+  padding: 8px 16px;
+  margin: 12px 0;
+  color: #455a64;
+  font-style: normal;
+  font-size: 13px;
+}
+.tag {
+  display: inline-block;
+  background: #e3f2fd;
+  color: #0d47a1;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+  margin-right: 4px;
+}
+.tag.red { background: #ffebee; color: #c62828; }
+.tag.yellow { background: #fff8e1; color: #e65100; }
+.tag.green { background: #e8f5e9; color: #1b5e20; }
+.kpi {
+  display: inline-block;
+  background: #0a3d62;
+  color: #fff;
+  padding: 8px 16px;
+  margin: 4px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+}
+hr { border: 0; border-top: 1px solid #d0d7de; margin: 32px 0; }
+.footer {
+  margin-top: 48px;
+  padding-top: 16px;
+  border-top: 1px solid #d0d7de;
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+}
+ul, ol { padding-left: 24px; }
+li { margin: 4px 0; }
+code {
+  background: #f4f6f8;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: "SF Mono", Consolas, monospace;
+  font-size: 12px;
+}
+@media print {
+  body { padding: 0; font-size: 12px; }
+  h1 { page-break-before: always; }
+  h1:first-of-type { page-break-before: avoid; }
+  .no-print { display: none; }
+  .callout, .callout-red, .callout-green, .toc, table { page-break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+
+<div class="meta">
+  <strong>📅 报告日期：</strong>2026-10-09 &nbsp;·&nbsp;
+  <strong>📊 数据源：</strong>洛书知识库 38 条命中 + 6 篇政策原文（96 KB） &nbsp;·&nbsp;
+  <strong>💰 积分消耗：</strong>90 积分（query）+ 0 积分（original 端点免费）&nbsp;·&nbsp;
+  <strong>🔖 积分余额：</strong>98,882.20
+</div>
+
+<div class="meta">
+  <strong>报告视角：</strong>朗新科技生态位 &nbsp;·&nbsp;
+  <strong>分析框架：</strong>政策 × 市场 × 产品 三轴交叉 &nbsp;·&nbsp;
+  <strong>建议窗口期：</strong>2026 Q4 – 2027 H1
+</div>
+
+<div class="callout no-print">
+  <strong>📄 怎么转 PDF：</strong>浏览器打开后按 <code>Ctrl+P</code>（Mac: <code>Cmd+P</code>）→ 目标选"另存为 PDF"→ 边距选"无"或"最小"→ 保存。
+  HTML 已内置 <code>@media print</code> 打印样式，自动分页。
+</div>
+
+<h1>数据要素市场分析报告</h1>
+<h2>— 朗新科技生态位视角 —</h2>
+
+<div class="toc">
+  <h3>目录</h3>
+  <ol>
+    <li>核心结论（5 条速读）</li>
+    <li>政策时间线（2025-09 → 2026-09）</li>
+    <li>市场结构：四类机构与三档赛道</li>
+    <li>市场温度计：2026 年招标采购金额分布</li>
+    <li>关键项目深度拆解（4 个标志性采购）</li>
+    <li>试点验证：中国钢研新材料案例</li>
+    <li>朗新四象限定位（政策 × 产品）</li>
+    <li>5 个具体动作建议（按时间窗排）</li>
+    <li>风险与盲点</li>
+    <li>数据源 / 积分明细 / 工具链</li>
+  </ol>
+</div>
+
+<h1>1. 核心结论（5 条速读）</h1>
+
+<div class="callout-green">
+  <strong>① 政策定调已经完成，三窗口叠加</strong><br>
+  2025-09-16 首批可信数据空间试点 63 个（13 城 + 22 行业 + 28 企业）&nbsp;+&nbsp;
+  2026-02-07 国数政策 6 号《培育数据流通服务机构》四类机构定调&nbsp;+&nbsp;
+  2026-09-08 数据要素×大赛总决赛 9-19 启动&nbsp;=&nbsp;<strong>政策三重奏</strong>。
+</div>
+
+<div class="callout-green">
+  <strong>② 朗新 = 第②类「数据流通服务平台企业 / 数据基础设施运营方」</strong><br>
+  国数政策 6 号首次对四类机构做系统性定调。朗新"数据空间联合运营"模式 = 第②类下"数据基础设施运营方"细分。
+  <strong>这是政策语言，比"可信数据空间联合运营"更准确</strong>。
+</div>
+
+<div class="callout-green">
+  <strong>③ 4 月下纯可信数据空间采购 1.66 亿元（不只 2.14 亿）</strong><br>
+  v1 误读 2.14 亿 = 遂宁具身智能（AI 类）。v2 修正：
+  南昌 1.2 亿（接入连接器+基础支撑平台+可信数据空间服务能力）&nbsp;+&nbsp;
+  毕节天麻 3000 万（垂直行业）&nbsp;+&nbsp;
+  大连中标 1588 万（区域数据流通）= <strong>1.66 亿</strong>。这是国家级数据基础设施招标，<strong>不是普通政务项目</strong>。
+</div>
+
+<div class="callout">
+  <strong>④ 朗新在首批 63 个试点里没看到</strong><br>
+  原文未列完整名单，需要查附件。<strong>第二批/扩围预计 2026 Q4 启动申报</strong>，是朗新最大政策窗口。
+</div>
+
+<div class="callout-red">
+  <strong>⑤ 国网新疆电力新能源案例 = 朗新最直接对标范本</strong><br>
+  国网新疆电力"数据要素×"典型案例之十九：807 家新能源场站 / 5.7 亿条风电运行数据 / 风电预测精度 +4.3% / 新能源上网电量 +31.9 亿千瓦时。
+  朗新 4 大产品（市场化售电 / 新能源资产管理 / 充电桩选址 / 工商业储能）<strong>直接对位</strong>，但缺国网级数据采集能力 → <strong>互补机会</strong>。
+</div>
+
+<h1>2. 政策时间线（2025-09 → 2026-09）</h1>
+
+<table>
+<thead>
+<tr>
+  <th>日期</th>
+  <th>政策/事件</th>
+  <th>发布主体</th>
+  <th>关键信号</th>
+  <th>朗新关联</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>2024-06-20</td>
+  <td>第一批"数据要素×"典型案例之十九：国网新疆电力新能源数据应用</td>
+  <td>国家数据局</td>
+  <td>807 场站 / 5.7 亿条 / 精度 +4.3%</td>
+  <td><span class="tag red">直接对标</span></td>
+</tr>
+<tr>
+  <td>2025-09-16</td>
+  <td><strong>首批可信数据空间创新发展试点名单</strong>（63 个）</td>
+  <td>国家数据局 + 人民日报</td>
+  <td>13 城 + 22 行业 + 28 企业</td>
+  <td><span class="tag red">首批未列</span></td>
+</tr>
+<tr>
+  <td>2026-02-07</td>
+  <td><strong>国数政策〔2026〕6 号</strong> 培育数据流通服务机构意见</td>
+  <td>国家数据局+工信部+公安部+证监会</td>
+  <td>4 类机构定调 + 到 2029 年底</td>
+  <td><span class="tag red">核心定位</span></td>
+</tr>
+<tr>
+  <td>2026-02-13</td>
+  <td>数据大讲堂第 29 期：刘烈宏定调培育服务机构</td>
+  <td>国家数据局</td>
+  <td>"首次系统性部署"</td>
+  <td><span class="tag yellow">信号</span></td>
+</tr>
+<tr>
+  <td>2026-04-30</td>
+  <td>4 月下数据要素招标中标项目动态</td>
+  <td>安永公开/网络收集</td>
+  <td>数据领域 10 个 / 总额 ~4.95 亿</td>
+  <td><span class="tag green">市场温度</span></td>
+</tr>
+<tr>
+  <td>2026-09-08</td>
+  <td>2026 数据要素×大赛全国总决赛通知</td>
+  <td>国家数据局</td>
+  <td>9-19 线上初评 / 9-26 终评 / 9-27 颁奖（青岛）</td>
+  <td><span class="tag yellow">参与机会</span></td>
+</tr>
+<tr>
+  <td>2026-09-12</td>
+  <td>4 月下动态收录到洛书（采集时间）</td>
+  <td>洛书采集</td>
+  <td>知识库最全数据点</td>
+  <td><span class="tag">参考</span></td>
+</tr>
+</tbody>
+</table>
+
+<h1>3. 市场结构：四类机构与三档赛道</h1>
+
+<h2>3.1 国数政策 6 号「四类机构」定调</h2>
+
+<table>
+<thead>
+<tr>
+  <th>类别</th>
+  <th>政策定位</th>
+  <th>代表机构</th>
+  <th>朗新位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>① 数据交易所（中心）</td>
+  <td>综合服务（合规/供需匹配/价格发现/产品开发/生态培育）</td>
+  <td>北京国际大数据交易所、上海数据交易所</td>
+  <td>合作方</td>
+</tr>
+<tr>
+  <td><strong>② 数据流通服务平台企业</strong></td>
+  <td><strong>围绕产业链/供应链/平台生态，促进数据流通利用和价值共创</strong></td>
+  <td><strong>朗新科技</strong>、产业互联网平台、数据基础设施运营方</td>
+  <td><span class="tag red">⭐ 朗新定位</span></td>
+</tr>
+<tr>
+  <td>③ 数据商</td>
+  <td>数据产品和服务开发（采集/加工/交易）</td>
+  <td>海天瑞声等</td>
+  <td>互补</td>
+</tr>
+<tr>
+  <td>④ 第三方专业服务机构</td>
+  <td>合规审计/质量评价/数据安全/数据保险/数据托管/资产评估/争议仲裁</td>
+  <td>律所、会计师事务所、安全厂商</td>
+  <td>配套</td>
+</tr>
+</tbody>
+</table>
+
+<div class="callout">
+  <strong>关键判断：</strong>朗新 + 北京数交所/江苏数交所/中交信科的合作 = <strong>第①类 × 第②类协同</strong>（最政策友好组合）。
+  国数政策 6 号到 <strong>2029 年底</strong> 三年政策红利期。
+</div>
+
+<h2>3.2 三档赛道（按政策力度 + 市场化进度）</h2>
+
+<table>
+<thead>
+<tr>
+  <th>档位</th>
+  <th>主题</th>
+  <th>政策力度</th>
+  <th>市场化进度</th>
+  <th>朗新位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>L1 国家战略</strong></td>
+  <td>可信数据空间首批试点</td>
+  <td>🔴 最高</td>
+  <td>试点名单已发，扩围待启</td>
+  <td><strong>核心赛道</strong></td>
+</tr>
+<tr>
+  <td><strong>L1 国家战略</strong></td>
+  <td>数据要素× 大赛 + 场景指引</td>
+  <td>🔴 最高</td>
+  <td>持续滚动</td>
+  <td><strong>核心赛道</strong></td>
+</tr>
+<tr>
+  <td><strong>L2 制度落地</strong></td>
+  <td>培育数据流通服务机构</td>
+  <td>🟡 高</td>
+  <td>已发意见 → 落地</td>
+  <td><strong>运营方角色红利</strong></td>
+</tr>
+<tr>
+  <td><strong>L2 行业应用</strong></td>
+  <td>数据要素 + 新能源/电力</td>
+  <td>🟡 高</td>
+  <td>制度核算接入</td>
+  <td><strong>直接相关</strong></td>
+</tr>
+<tr>
+  <td><strong>L3 商业化</strong></td>
+  <td>数交所联合运营</td>
+  <td>🟡 中</td>
+  <td>个别案例</td>
+  <td><strong>差异化空白</strong></td>
+</tr>
+<tr>
+  <td><strong>L3 商业化</strong></td>
+  <td>充电桩/储能/虚拟电厂数据产品</td>
+  <td>⚪ 低</td>
+  <td>极早期</td>
+  <td><strong>蓝海</strong></td>
+</tr>
+</tbody>
+</table>
+
+<h1>4. 市场温度计：2026 年招标采购金额分布</h1>
+
+<h2>4.1 4 月下（重点样本）数据领域采购</h2>
+
+<table>
+<thead>
+<tr>
+  <th>项目名称</th>
+  <th>采购方</th>
+  <th>金额</th>
+  <th>类别</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>南昌市数据基础设施建设运营项目</td><td>云上（南昌）大数据运营</td><td><strong>1.2 亿</strong></td><td>数据基础设施 + 可信数据空间</td></tr>
+<tr><td>自贡高新区全域数字化转型</td><td>汇东城建</td><td>1.0 亿</td><td>智慧城市（无算力）</td></tr>
+<tr><td>呼和浩特生态环保低空数据要素</td><td>内蒙古应急航空</td><td>8300 万</td><td>无人机政务</td></tr>
+<tr><td>光谷城市一体化数字服务底座</td><td>武汉光谷云</td><td>5909 万</td><td>数字底座</td></tr>
+<tr><td>长沙荷塘区全域数字化转型</td><td>荷塘区数据局</td><td>5998 万</td><td>智能体+数据集</td></tr>
+<tr><td>台江区数智城市公共服务平台</td><td>福州市台江区数据局</td><td>4375 万</td><td>数字底座</td></tr>
+<tr><td>数字孪生赣抚尾闾水利枢纽</td><td>江西赣抚尾闾</td><td>3000 万</td><td>水利数字孪生</td></tr>
+<tr><td>毕节天麻可信数据空间（一期）</td><td>毕节市可信数据空间</td><td>3000 万</td><td><strong>可信数据空间（垂直行业）</strong></td></tr>
+<tr><td>测绘地理信息时空智能多模态</td><td>自然资源部第三地理信息制图院</td><td>1655 万</td><td>测绘数据</td></tr>
+<tr><td>上海普陀区公共数据运营服务</td><td>上海普陀区城运中心</td><td>1644 万</td><td>区级数据运营</td></tr>
+<tr><td>深圳南山区数据要素市场化综合提升</td><td>深圳南山区政数局</td><td>899 万</td><td>数据要素市场化</td></tr>
+<tr><td>城关区数字政府一体化</td><td>兰州城关区政务服务</td><td>810 万</td><td>数字政府</td></tr>
+<tr><td>肇庆气象数据要素×服务</td><td>广东肇庆市气象局</td><td>489 万</td><td>气象数据要素×</td></tr>
+</tbody>
+</table>
+
+<div class="callout">
+  <strong>4 月下数据领域总采购 ~ 4.95 亿元</strong>，其中<strong>纯可信数据空间项目 2 个，1.5 亿元</strong>（南昌 1.2 亿 + 毕节 3000 万）。<br>
+  4 月下 AI 领域 2.14 亿（遂宁具身智能）不计入"数据要素"主线。
+</div>
+
+<h2>4.2 4 月下可信数据空间相关项目（中标准 1.66 亿）</h2>
+
+<table>
+<thead>
+<tr>
+  <th>项目</th>
+  <th>金额</th>
+  <th>状态</th>
+  <th>核心内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>南昌市数据基础设施建设运营</td>
+  <td>1.2 亿</td>
+  <td>采购</td>
+  <td>接入连接器 + 基础支撑平台 + 可信数据空间服务能力（≥10 种使用控制策略 / ≥5 种行业软件支持）</td>
+</tr>
+<tr>
+  <td>毕节高新区天麻可信数据空间（一期）</td>
+  <td>3000 万</td>
+  <td>采购</td>
+  <td>天麻产业垂直数据空间 / 数据确权/定价规则</td>
+</tr>
+<tr>
+  <td>大连数据流通利用基础设施</td>
+  <td>1588 万</td>
+  <td><strong>中标</strong>（中电云）</td>
+  <td>接入连接器 + 区域功能节点 + 区域数据流通利用平台</td>
+</tr>
+</tbody>
+</table>
+
+<div class="callout-red">
+  <strong>重要观察：</strong>采购方 = <strong>城投/数据集团/数据局三类</strong>。运营方角色 = 已有中电云/海康/华为云等巨头入场。
+  朗新差异化空间 = 垂直行业（能源/交通）+ SaaS 模式（轻量化）+ 跨域联合运营。
+</div>
+
+<h1>5. 关键项目深度拆解</h1>
+
+<h2>5.1 南昌 1.2 亿 — 国家级数据基础设施招标范本</h2>
+
+<blockquote>
+<strong>采购方：</strong>云上（南昌）大数据运营有限公司（南昌城投背景）<br>
+<strong>核心交付（4 块）：</strong><br>
+① 接入连接器（标准型 + 全功能型）<br>
+② 基础支撑平台（接入管理、身份认证、资产登记、目录发布、跨域支撑）<br>
+③ 数据使用控制能力（≥10 种策略：用法/用量/用途管控）<br>
+④ 可信数据空间服务能力（身份认证、数据安全监测、违规检测、数字合约协商、数据权益变更管理；≥5 种行业专用软件支持）<br>
+<strong>起止：</strong>2026-03-31 起
+</blockquote>
+
+<div class="callout">
+  <strong>朗新对位：</strong>南昌项目要求的"接入连接器 + 基础支撑平台 + 跨域使用控制"= 朗新"市场化售电 + 充电桩选址 + 工商业储能"<strong>三产品需要数据基础设施支撑</strong>。
+  朗新可做<strong>类似项目的"能源/交通行业版本"</strong>，对位<strong>南昌 + 毕节</strong>双模板。
+</div>
+
+<h2>5.2 毕节 3000 万 — 垂直行业可信数据空间</h2>
+
+<blockquote>
+<strong>采购方：</strong>毕节市可信数据空间有限公司（专门成立的项目公司）<br>
+<strong>行业：</strong>天麻（贵州毕节特色农业）<br>
+<strong>核心：</strong>深挖行业 + 生态牵引 + 广泛链接 + 模式输出 → <strong>形成全国试点示范</strong><br>
+<strong>探索内容：</strong>数据确权/安全/定价规则 + 可信数据空间商业运营推广模式
+</blockquote>
+
+<div class="callout">
+  <strong>朗新对位：</strong>天麻 = 农业垂直。朗新"新能源"或"充电桩"或"储能"任一行业都<strong>可以复制天麻模式</strong>（专门成立项目公司 + 行业垂直 + 探索规则 + 模式输出）。
+  <strong>建议：</strong>主动对接国家数据局/省级数据局，争取第二批"能源/交通"行业可信数据空间试点。
+</div>
+
+<h2>5.3 大连 1588 万（中标）— 区域数据流通</h2>
+
+<blockquote>
+<strong>采购方：</strong>大连市数据产业有限公司<br>
+<strong>中标方：</strong>中电云计算技术有限公司<br>
+<strong>核心：</strong>接入连接器 + 区域功能节点 + 区域数据流通利用平台<br>
+<strong>定位：</strong>立足大连、服务辽宁、辐射东北
+</blockquote>
+
+<div class="callout">
+  <strong>朗新对位：</strong>中电云已入场区域市场。朗新如要切入区域市场，需找<strong>非中电云/华为云覆盖</strong>的区域（如华东/西南的能源/交通垂直）。
+</div>
+
+<h2>5.4 国网新疆电力 — 朗新"新能源数据"叙事范本</h2>
+
+<table>
+<thead>
+<tr><th>维度</th><th>国网新疆数据</th><th>朗新可对位产品</th></tr>
+</thead>
+<tbody>
+<tr><td>数据采集</td><td>807 家新能源场站 / 5.7 亿条风电数据 / 8497 万条光伏数据</td><td>市场化售电 + 新能源资产管理</td></tr>
+<tr><td>模型能力</td><td>功率预测 + 消纳能力分析</td><td>新能源资产管理 + 工商业储能</td></tr>
+<tr><td>服务对象</td><td>800+ 新能源企业 + 政府部门</td><td>充电桩选址 + 工商业储能客户</td></tr>
+<tr><td>成效</td><td>风电精度 +4.3% / 光伏 +2.2% / 上网电量 +31.9 亿千瓦时</td><td>朗新缺这部分数据沉淀</td></tr>
+<tr><td>流程优化</td><td>15 项并网流程优化 / 效率 +30%</td><td>市场化售电的"结算+调度"流程对位</td></tr>
+</tbody>
+</table>
+
+<div class="callout-green">
+  <strong>复制路径：</strong>朗新可对接<strong>国网系/南网系/地方电力公司</strong>做联合数据产品 — 朗新做平台层 + 电力公司做数据源层。
+  <strong>非国网系市场 = 朗新 2 年时间窗</strong>（国网新疆案例 2024.06 至今未有滚动对外案例）。
+</div>
+
+<h1>6. 试点验证：中国钢研新材料案例</h1>
+
+<p>人民日报首批可信数据空间试点报道里<strong>唯一详细案例</strong>：</p>
+
+<blockquote>
+<strong>主体：</strong>中国钢研北京新材道<br>
+<strong>规模：</strong>50 多家产业链企业数据打通 / 上下游 26 万种材料产品信息<br>
+<strong>技术：</strong>区块链 + 隐私计算 → "数据不出域、可用不可见"<br>
+<strong>成效：</strong>研发周期 2 年 → 4 个月 / 比原计划提前 1 年 / 中国石化 × 中国钢研攻克石化氢能储运"卡脖子"<br>
+<strong>关键模式：</strong>数据实质上没被集中收集，还在各家企业域内 → <strong>可信数据空间实现"数据资源供需高效对接 + 价值共创"</strong>
+</blockquote>
+
+<div class="callout-green">
+  <strong>朗新对位：</strong>"数据不出域、可用不可见" = 朗新"充电桩选址"数据产品对位（充电桩运营方数据不出域，朗新做平台分析）。<br>
+  <strong>"价值共创"</strong>模式 = 朗新与中交信科/北数交合作模式对位。
+</div>
+
+<h1>7. 朗新四象限定位（政策 × 产品）</h1>
+
+<table>
+<thead>
+<tr>
+  <th></th>
+  <th><strong>政策强（国家战略）</strong></th>
+  <th><strong>政策弱（行业/区域）</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>产品强（已有 SaaS）</strong></td>
+  <td><span class="tag red">⭐ 核心战场</span><br>市场化售电 + 可信数据空间 + 培育服务机构</td>
+  <td><span class="tag yellow">差异化</span><br>充电桩选址 + 区域数交所</td>
+</tr>
+<tr>
+  <td><strong>产品弱（需共建）</strong></td>
+  <td><span class="tag">共建</span><br>新能源数据应用 + 国网/南网合作</td>
+  <td><span class="tag">长尾</span><br>虚拟电厂数据产品</td>
+</tr>
+</tbody>
+</table>
+
+<div class="callout">
+  <strong>关键判断：</strong>朗新在"<strong>政策强 + 产品强</strong>"象限 = 数据要素× 充电桩选址 / 市场化售电 → 直接报 2027 大赛数据基础设施赛道，<strong>赢面最大</strong>。
+  "<strong>政策强 + 产品弱</strong>"象限（新能源数据）= 借力国网新疆案例，找电力公司合作共建，<strong>不自己做采集</strong>。
+</div>
+
+<h1>8. 5 个具体动作建议（按时间窗排）</h1>
+
+<h2>🎯 动作 1：抢可信数据空间第 2 批试点（2026 Q4 启动）</h2>
+<ul>
+  <li><strong>主体：</strong>朗新 + 中交信科 + 北京数交所 联合申报</li>
+  <li><strong>方向：</strong>交通行业可信数据空间 / 能源行业可信数据空间</li>
+  <li><strong>对位：</strong>毕节天麻模式（专门成立项目公司 + 行业垂直 + 探索规则 + 模式输出）</li>
+  <li><strong>关键人：</strong>国家数据局政策和规划司 雷骐祯/哈杨（010-89062282）</li>
+</ul>
+
+<h2>🎯 动作 2：报 2027"数据要素×"大赛数据基础设施赛道</h2>
+<ul>
+  <li><strong>评审规则：</strong>先进性 + 实效性 + 示范性 + 安全性</li>
+  <li><strong>朗新优势：</strong>已跨能源/交通/制造/城市多行业（示范性强）</li>
+  <li><strong>建议：</strong>9-10 月跟踪 2026 总决赛结果，2027 年 3-4 月报名</li>
+  <li><strong>关键人：</strong>大赛组委会秘书处 王媛（010-89062609）</li>
+</ul>
+
+<h2>🎯 动作 3：复制国网新疆电力模式（朗新能源数据产品对位）</h2>
+<ul>
+  <li><strong>目标：</strong>对接国网系/南网系/地方电力公司联合做数据产品</li>
+  <li><strong>分工：</strong>朗新做平台层 + 电力公司做数据源层</li>
+  <li><strong>切入点：</strong>市场化售电 + 新能源资产管理 + 充电桩选址 三产品整合</li>
+  <li><strong>时间窗：</strong>2 年（国网案例 2024.06 后未滚动对外）</li>
+</ul>
+
+<h2>🎯 动作 4：对外材料改用政策语言</h2>
+<ul>
+  <li><strong>替换：</strong>"可信数据空间联合运营" → "<strong>数据基础设施运营方</strong>"（国数政策 6 号用语）</li>
+  <li><strong>统一叙事：</strong>"<strong>数据要素+新能源</strong>" 替代"能源互联网"（5 部门联合发文背书）</li>
+  <li><strong>客户语言：</strong>"<strong>数据流通服务平台企业</strong>"（国数政策 6 号四类机构第②类）</li>
+</ul>
+
+<h2>🎯 动作 5：回灌朗新合作案例到洛书（知识库护城河）</h2>
+<ul>
+  <li><strong>目标：</strong>让洛书成为"全国唯一"数交所联合运营案例库</li>
+  <li><strong>原则（MEMORY 8-13 铁律）：</strong>只收客观事实，不收主观建议</li>
+  <li><strong>内容：</strong>北数交/江苏数交所/中交信科合作模式 + 充电桩选址/储能案例</li>
+  <li><strong>时机：</strong>合作落地后 1 个月内入库</li>
+</ul>
+
+<h1>9. 风险与盲点</h1>
+
+<div class="callout-red">
+  <strong>盲点 1：</strong>首批 63 个试点的<strong>完整名单</strong>原文未列（只列中国钢研新材料 1 个），需要查国务院/国家数据局官方完整附件。
+</div>
+
+<div class="callout-red">
+  <strong>盲点 2：</strong>2026 数据要素×大赛总决赛 9-19 已开评，<strong>洛书未显示朗新参赛信息</strong>。需要确认朗新 2026 是否报名。
+</div>
+
+<div class="callout-red">
+  <strong>盲点 3：</strong>洛书 query 命中跨租户知识时，<strong>GET 详情返 LSE003 / 403</strong>。本报告基于 title/summary/tags/category + 6 篇原文 + 政策语言推断，<strong>关键项目参数</strong>（如完整试点名单/具体招标参数）需另查官方原文。
+</div>
+
+<div class="callout">
+  <strong>风险 1：</strong>5-8 月招标动态洛书断点（最近只有 4 月下 + 9 月上）。可能是知识采集未跟上，<strong>不一定是市场冷却</strong>。
+</div>
+
+<div class="callout">
+  <strong>风险 2：</strong>2024.06 国网新疆案例至今 2 年多，<strong>未有滚动对外案例</strong>。可能国网系内部在做但未公开，<strong>朗新切入窗口可能比预期短</strong>。
+</div>
+
+<div class="callout">
+  <strong>风险 3：</strong>国数政策 6 号"到 2029 年底"是 3 年红利期，但首批试点 2 年+扩围是 <strong>18-24 个月</strong>。<strong>真正紧迫的是试点扩围</strong>。
+</div>
+
+<h1>10. 数据源 / 积分明细 / 工具链</h1>
+
+<h2>10.1 6 篇原文清单</h2>
+
+<table>
+<thead>
+<tr><th>#</th><th>原文标题</th><th>发布日期</th><th>字数</th></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>人民日报｜首批可信数据空间创新发展试点名单发布</td><td>2025-09-16</td><td>1538</td></tr>
+<tr><td>2</td><td>国数政策〔2026〕6 号 关于培育数据流通服务机构的意见</td><td>2026-02-07</td><td>4201</td></tr>
+<tr><td>3</td><td>2026 数据要素×大赛全国总决赛通知</td><td>2026-09-08</td><td>3817</td></tr>
+<tr><td>4</td><td>数据要素招标中标项目动态（2026年4月下）</td><td>2026-04-30</td><td>8608</td></tr>
+<tr><td>5</td><td>推动数据要素创新应用 助力新能源发展及消纳</td><td>2024-06-20</td><td>2230</td></tr>
+<tr><td>6</td><td>数据大讲堂第 29 期 培育数据流通服务机构</td><td>2026-02-13</td><td>972</td></tr>
+</tbody>
+</table>
+
+<h2>10.2 积分消耗</h2>
+
+<table>
+<thead>
+<tr><th>阶段</th><th>次数</th><th>积分</th><th>剩余</th></tr>
+</thead>
+<tbody>
+<tr><td>query 8 次</td><td>8</td><td>90</td><td>98,882.20</td></tr>
+<tr><td>original 6 次</td><td>6</td><td><strong>0</strong>（免费）</td><td>98,882.20</td></tr>
+</tbody>
+</table>
+
+<h2>10.3 工具链</h2>
+
+<ul>
+  <li><strong>洛书 v2.0</strong> (luoshu, 端口 8091) — knowledge 检索 + original 端点取全文</li>
+  <li><strong>POST /api/v2/query</strong> — 检索（带 confirmed_budget_points）</li>
+  <li><strong>POST /api/v2/knowledge/{id}/original</strong> — 取全文（0 积分，需 X-API-Key + X-Agent-Id + Idempotency-Key）</li>
+  <li><strong>agent_api_key</strong> — `~/.openclaw/state/kb-hub/agent_api_key`</li>
+</ul>
+
+<div class="callout-red">
+  <strong>血训（2026-10-09 写入 MEMORY）：</strong>9-24 那条"original 是模板占位"是错的。`POST /api/v2/knowledge/{id}/original` 是 v2 真路径，<strong>3 个 header 必填</strong>（X-API-Key + X-Agent-Id + Idempotency-Key）+ 4 个 body 字段，<strong>0 积分免费不限租户</strong>。GET 那条对 agent key 跨租户返 403。
+</div>
+
+<hr>
+
+<div class="footer">
+  <p>报告生成：2026-10-09 · Domi · 数据源 洛书 v2.0（luoshu:8091）· 朗新科技生态位视角</p>
+  <p>本报告基于 6 篇政策原文 + 38 条知识库命中，仅供朗新科技业务决策参考</p>
+</div>
+
+</body>
+</html>
